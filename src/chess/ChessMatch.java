@@ -134,6 +134,7 @@ public class ChessMatch {
         if(type.equals("N")) return new Knight(board, color);
         if(type.equals("R")) return new Rook(board, color);
         if(type.equals("Q")) return new Queen(board, color);
+        return null;
     }
 
     private Piece makeMove(Position source, Position target) {
